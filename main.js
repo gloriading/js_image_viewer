@@ -1,5 +1,17 @@
+const imageBox = document.querySelector('.img-group-box');
+
+window.onload = showImgList(12);
+
+function showImgList(numOfImages){
+  for(let i=1; i<=numOfImages; i++){
+    let newImg = document.createElement('img');
+    newImg.src=`images/image${i}.jpeg`;
+    imageBox.appendChild(newImg);
+  }
+}
+
 const currentImg = document.getElementById('current');
-const allImgs = document.querySelectorAll('.img-group img');
+const allImgs = document.querySelectorAll('.img-group-box img');
 const opacity = 0.6;
 
 // set the opacity of the first of the group 
