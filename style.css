@@ -1,0 +1,53 @@
+* {
+  padding: 0;  
+  margin: 0;
+}
+
+body {
+  background: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  border: whitesmoke solid 2px;
+  background: whitesmoke;
+}
+
+.main-img img,
+.img-group img
+{
+  width: 100%;
+}
+
+.img-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.img-group img:hover {
+  cursor: pointer;
+}
+
+/* Fade in animation */
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.7s ease-in forwards;
+}
+
+/* responsive setting */
+
+@media(max-width: 500px){
+  .img-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+   
+}
