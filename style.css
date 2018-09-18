@@ -20,7 +20,9 @@ body {
   position: fixed;
   right: 50px;
   top: 50px;
-  border: 1px solid whitesmoke;
+  border-width: 1px 1px 3px 3px;
+  border-color: whitesmoke;
+  border-style: solid;
   padding: 10px;
   text-align: center;
 }
@@ -54,6 +56,9 @@ body {
 .logo p {
   color: #333;
   font-family: 'Roboto Condensed', sans-serif;
+}
+.logo p span {
+  color: deeppink;
 }
 
 
